@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
   res.render('index', { title: 'CSE Motors | Home' });
 });
 
-// Health check (useful for Render)
+// Health check 
 app.get('/health', (req, res) => res.send('ok'));
 
 app.listen(PORT, () => {
