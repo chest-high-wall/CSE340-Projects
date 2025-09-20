@@ -1,0 +1,18 @@
+{
+  "name": "cse-motors-ejs",
+  "version": "1.0.0",
+  "description": "CSE 340 Assignment 1 - CSE Motors EJS starter (no external frameworks/templates)",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  }
+}

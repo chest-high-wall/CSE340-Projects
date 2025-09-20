@@ -1,0 +1,24 @@
+<footer class="site-footer" role="contentinfo">
+  <div class="container footer-grid">
+    <p>&copy; <span id="year"></span> CSE Motors. All rights reserved.</p>
+    <ul class="inline">
+      <li><a href="#privacy">Privacy</a></li>
+      <li><a href="#terms">Terms</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+  // Minimal progressive enhancement (no frameworks)
+  const Y=document.getElementById('year'); if (Y) Y.textContent=new Date().getFullYear();
+  const t=document.getElementById('nav-toggle'), n=document.getElementById('site-nav');
+  if (t && n){
+    t.addEventListener('click', ()=>{
+      const open = n.classList.toggle('open');
+      t.setAttribute('aria-expanded', String(open));
+    });
+  }
+</script>
+</body>
+</html>

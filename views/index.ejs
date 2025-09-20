@@ -1,0 +1,100 @@
+<%- include('partials/head') %>
+<%- include('partials/header') %>
+
+<main id="main" class="site-main" role="main">
+  <!-- HERO / BANNER -->
+  <section class="hero container">
+    <div class="hero-copy">
+      <h1>Find your next <span class="accent">ride</span> at <span class="brand-strong">CSE</span> Motors</h1>
+      <p>Quality vehicles. Transparent pricing. Friendly, no-pressure experience.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#inventory">Browse Inventory</a>
+        <a class="btn" href="#specials">View Specials</a>
+      </div>
+    </div>
+    <figure class="hero-art">
+      <img src="/images/hero-banner.jpg" alt="Sleek sedan in a modern showroom" width="1200" height="675" loading="eager">
+    </figure>
+  </section>
+
+  <!-- HIGHLIGHTS (cards) -->
+  <section id="specials" class="section container">
+    <header class="section-header">
+      <h2>This Week’s Highlights</h2>
+      <p class="muted">Hand-picked deals and popular models.</p>
+    </header>
+    <div class="card-grid">
+      <article class="card">
+        <img src="/images/card-1.jpg" alt="Compact hatchback in silver" width="640" height="360" loading="lazy">
+        <h3>2022 Compact LX</h3>
+        <p>Low miles, excellent economy, Apple CarPlay&reg;.</p>
+      </article>
+      <article class="card">
+        <img src="/images/card-2.jpg" alt="Blue SUV in a scenic canyon" width="640" height="360" loading="lazy">
+        <h3>2023 Adventure SUV</h3>
+        <p>AWD, safety suite, room for the whole crew.</p>
+      </article>
+      <article class="card">
+        <img src="/images/card-3.jpg" alt="Red sports coupe on a track" width="640" height="360" loading="lazy">
+        <h3>2021 Sport Coupe</h3>
+        <p>Turbocharged fun with premium sound.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- INFO STRIP -->
+  <section id="service" class="info-strip">
+    <div class="container info-grid">
+      <div>
+        <h3>Service You Can Trust</h3>
+        <p class="muted">Certified technicians, OEM parts, and honest timelines.</p>
+      </div>
+      <div>
+        <h3>Financing Options</h3>
+        <p class="muted">Competitive rates and flexible terms to fit your budget.</p>
+      </div>
+      <div>
+        <h3>Trade-ins Welcome</h3>
+        <p class="muted">Get a fair value offer in minutes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INVENTORY PREVIEW -->
+  <section id="inventory" class="section container">
+    <header class="section-header">
+      <h2>Inventory Preview</h2>
+      <p class="muted">Browse our most popular categories.</p>
+    </header>
+    <ul class="pill-list" role="list">
+      <li><a class="pill" href="#">Sedans</a></li>
+      <li><a class="pill" href="#">SUVs</a></li>
+      <li><a class="pill" href="#">Trucks</a></li>
+      <li><a class="pill" href="#">EV / Hybrid</a></li>
+    </ul>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section container">
+    <header class="section-header">
+      <h2>Contact</h2>
+    </header>
+    <form class="contact-form" action="#" method="post">
+      <div class="field">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+      </div>
+      <button class="btn primary" type="submit">Send</button>
+    </form>
+  </section>
+</main>
+
+<%- include('partials/footer') %>
