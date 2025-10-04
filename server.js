@@ -9,13 +9,13 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 
-// Home page (you already have index.ejs)
+
 app.get("/", (req, res) => res.render("index", { title: "CSE Motors | Home" }));
 
-// Health check
+
 app.get("/health", (req, res) => res.send("ok"));
 
-// Inventory routes (we’ll add the file in Step 3)
+
 const inventoryRoute = require("./routes/inventoryRoute");
 app.use("/inv", inventoryRoute);
 
