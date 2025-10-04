@@ -5,16 +5,20 @@
       <li><a href="#privacy">Privacy</a></li>
       <li><a href="#terms">Terms</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li><a href="/boom">Trigger 500 error (test)</a></li> <!-- new link -->
     </ul>
   </div>
 </footer>
 
 <script>
-  // Minimal progressive enhancement (no frameworks)
-  const Y=document.getElementById('year'); if (Y) Y.textContent=new Date().getFullYear();
-  const t=document.getElementById('nav-toggle'), n=document.getElementById('site-nav');
-  if (t && n){
-    t.addEventListener('click', ()=>{
+  // Progressive enhancement for year + nav toggle
+  const Y = document.getElementById('year');
+  if (Y) Y.textContent = new Date().getFullYear();
+
+  const t = document.getElementById('nav-toggle'),
+        n = document.getElementById('site-nav');
+  if (t && n) {
+    t.addEventListener('click', () => {
       const open = n.classList.toggle('open');
       t.setAttribute('aria-expanded', String(open));
     });
